@@ -1,0 +1,26 @@
+!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>mr Bin</title>
+</head>
+<body>
+  <div>text</div>
+<script>
+let div = document.querySelector('div');
+let p = document.createElement('p');
+div.appendChild(p);
+p.textContent = 'wow!';
+for(let i = 1; i < 6; i++) {
+ input = document.createElement('input');
+
+
+
+input.addEventListener('blur', function() {
+    p.textContent = p.textContent + '' + this.value;
+}); 
+div.appendChild(input); }
+</script>
+</body>
+</html>
